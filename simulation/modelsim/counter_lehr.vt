@@ -45,7 +45,10 @@ counter_lehr i1 (
 	.enable(enable),
 	.reset(reset)
 );
-initial                                                
+initial      
+
+//#10000 $finish;
+
 begin                                                  
 // code that executes only once                        
 // insert code here --> begin                          
@@ -99,6 +102,18 @@ initial
     #50  -> reset_trigger;  //сделать ресет
 end
 
+//Давайте добавим в программу условия остановки симуляции.
+
+event terminate_sim;  
+initial begin  
+ @ (terminate_sim); 
+ #5  $stop; 
+end  
+
+//Теперь в нужное место вставляем
+
+//-> terminate_sim;
+
 /* 
     avatar
     tda2030
@@ -106,5 +121,8 @@ end
     ↑
 уже 2 раз отвечаю на свои вопросы =) я не понял почему но 
 если «endmodule» переместить в конец кода то код начинает работать))*/
+
+//initial      
+//#10000 $finish;
 
 endmodule
