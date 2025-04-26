@@ -12,33 +12,38 @@
 # 
 # vlog -vlog01compat -work work +incdir+D:/intelFPGA_File/counter_lehr {D:/intelFPGA_File/counter_lehr/counter_lehr.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:49:30 on Mar 23,2025
+# Start time: 19:47:32 on Mar 29,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intelFPGA_File/counter_lehr" D:/intelFPGA_File/counter_lehr/counter_lehr.v 
 # -- Compiling module counter_lehr
 # 
 # Top level modules:
 # 	counter_lehr
-# End time: 15:49:30 on Mar 23,2025, Elapsed time: 0:00:00
+# End time: 19:47:33 on Mar 29,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+D:/intelFPGA_File/counter_lehr/simulation/modelsim {D:/intelFPGA_File/counter_lehr/simulation/modelsim/counter_lehr.vt}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:49:30 on Mar 23,2025
+# Start time: 19:47:33 on Mar 29,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intelFPGA_File/counter_lehr/simulation/modelsim" D:/intelFPGA_File/counter_lehr/simulation/modelsim/counter_lehr.vt 
 # -- Compiling module counter_lehr_vlg_tst
 # 
 # Top level modules:
 # 	counter_lehr_vlg_tst
-# End time: 15:49:30 on Mar 23,2025, Elapsed time: 0:00:00
+# End time: 19:47:33 on Mar 29,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  counter_lehr_vlg_tst
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" counter_lehr_vlg_tst 
-# Start time: 15:49:30 on Mar 23,2025
+# Start time: 19:47:35 on Mar 29,2025
 # Loading work.counter_lehr_vlg_tst
 # Loading work.counter_lehr
 # 
 # add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: рс  Hostname: PEOTR60  ProcessID: 28928
+#           Attempting to use alternate WLF file "./wlftsj7wy2".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftsj7wy2
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
@@ -46,5 +51,5 @@
 # run -all
 # Running testbench
 # Running testbench
-# End time: 15:49:48 on Mar 23,2025, Elapsed time: 0:00:18
-# Errors: 0, Warnings: 0
+# End time: 19:48:58 on Mar 29,2025, Elapsed time: 0:01:23
+# Errors: 0, Warnings: 2
